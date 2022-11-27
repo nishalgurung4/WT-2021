@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Selector</title>
+	<style type="text/css">
+		/* Type of selector
+		1. Type selector
+		2. Universal selector
+		3. Class selector
+		4. ID Selector
+		5. Attribute selector
+		6. Descendant selector
+		7. Child combinator selector
+		8. Adjacent Sibling selector
+		9. General Sibling selector
+		 */
+		/**
+		 * Type selector
+		 */
+		p {
+/*			color:red;*/
+		}
+
+		/**
+		 * Universal selector
+		 */
+		* {
+
+		}
+
+		/**
+		 * Class selector
+		 */
+		.red {
+/*			color:red;*/
+		}
+
+		/**
+		 * ID Selector
+		 */
+		#second-h1 {
+/*			color:blue;*/
+		}
+
+		/**
+		 * Attribute selector
+		 */
+		span[class='hi'] {
+/*			color: green;*/
+		}
+
+		/**
+		 * Descendant selector
+		 */
+		div p {
+/*			color: blue;*/
+		}
+
+		/**
+		 * Child combinator selector
+		 */
+		
+		div > p {
+/*			color: blue;*/
+		}
+
+		/**
+		 * Adjacent Sibling selector
+		 * 
+		 */
+		
+		div + p {
+/*			color:blue;*/
+		}
+
+
+		/**
+		 * General Sibling selector
+		 */
+		
+		div ~ p {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+<p>This is p tag.</p>
+
+<div class="red bg-blue">This is div.</div>
+<p>This is third p tag.</p>
+<p>This is second p tag.</p>
+
+<h1 id="second-h1">This is another h1.</h1>
+
+<span class="hello">Hello</span>
+<span class="hi">Hi</span>
+
+
+<div>
+	<p>
+		Inside div
+	</p>
+	<p>
+		Anoter p Inside div
+	</p>
+	<h1><p>Inside div and p</p></h1>
+</div>
+</body>
+</html>
