@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cascading</title>
+	<style type="text/css">
+
+		/**
+		 * 10
+		 */
+		.red {
+			color:red;
+		}
+		/**
+		 * 2
+		 */
+		body p {
+			color:green;
+		}
+		/**
+		 * 1
+		 */
+		p {
+			color:yellow;
+		}
+
+		#pink {
+			color: pink;
+		}
+
+		/**
+		 * 114
+		 */
+		html body div p.red#pink {
+			color:pink;
+		}
+
+		/**Add additional css here
+		 */
+		p#pink {
+			color:blue !important;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<p class="red" id="pink">
+			Hello!
+		</p>
+	</div>
+
+</body>
+</html>
