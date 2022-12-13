@@ -16,3 +16,14 @@
 * Create borders as per given figure.
 ![box](assets/images/box.png)
 > Deadline: 2nd December, 12 pm
+
+4. Design Navbar, CTA, Hero section and 404 page.
+* As shown in the figure below, design 404 page.
+   ![404](assets/images/404.png)
+* Design CTA section as shown in the figure below.
+   ![cta](assets/images/cta.png)
+* As shown in the figure below, design Hero section.
+   ![hero](assets/images/hero.png)
+* As shown in the figure below, design Navbar section.
+   ![nav](assets/images/nav.png)
+> Deadline: 16th December, 10 am
