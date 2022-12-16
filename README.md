@@ -27,3 +27,16 @@
 * As shown in the figure below, design Navbar section.
    ![nav](assets/images/nav.png)
 > Deadline: 16th December, 10 am
+
+
+## Labs:
+
+1. Lab 1: HTML Elements.
+* Make a webpage with the following html elements:
+   * Nested order and unorder list
+   * semantics tags for the layout
+   * text formatting tags
+   * image, video and audio
+   * iframe
+> You can add additional elements and CSS to make the webpage more visually appealing.
+> Deadline: 23 December, 8 am
