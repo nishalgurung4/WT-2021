@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Object</title>
+</head>
+<body>
+<script type="text/javascript">
+	//prototyping OOP
+	//Create object in JS
+	//1.
+	const person = {} //{} object literal
+	person.name = "Bishwas Thapa";
+	person.age = 24;
+	person.walk = function () {
+		console.log("person walking..");
+	}
+
+	console.log(person);
+
+	//2.
+	const animal = {
+		'full name': "Dog", 
+		age: 2,
+		walk: function () {
+			console.log("walking...");
+		}
+	};
+
+	console.log(animal);
+
+	//3.
+	const bird = new Object();
+	bird.name = "Parrot";
+	bird.age = 4;
+
+	console.log(bird);
+
+
+	//this keyword
+	//
+	const student = {
+		name: "Aayush Thapa",
+		introduce: function () {
+			console.log("Hi! I'm " + this.name);
+		}
+	}
+
+	//Constructor
+	
+	function College(name)
+	{
+		this.name = name;
+		this.introduce = function () {
+			console.log("Hi! this is " + this.name + " college");
+		}
+	}
+
+	const gces = new College("Gandaki College of Engineering & Science");
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array</title>
+</head>
+<body>
+<script type="text/javascript">
+	let cars = ["BMW", "Maruti 800", "Tucson"];
+
+	console.log(cars[0]);
+
+	cars[1] = "KIA celtos";
+
+	cars[3] = "TATA Nexon";
+
+	cars [5] = "Pajero";
+
+	let students = ["Anil", 2, false, null];
+
+	//methods of array
+	console.log(cars.length);
+	console.log(cars.indexOf("BMW"));
+
+	//add new item in array
+	cars[6] = "Toyota Hiace";
+	cars[cars.length] = "";
+
+	let newSize = cars.push("Toyota Hilux");
+	console.log(newSize);
+	console.log(cars.pop());
+
+	cars.unshift("Tesla");
+	cars.shift();
+
+	let rollno = [1, 5, 10, 24, 15];
+
+	// function iterate(roll)
+	// {
+	// 	return "rollno="+roll;
+	// }
+
+	// rollno = rollno.map(iterate); //closure
+	
+	rollno = rollno.map(function (roll) {
+		return "rollno="+roll;
+	});
+
+
+	console.log(rollno);
+
+
+	function testClosure(pramFunction)
+	{
+		console.log("start of test closure");
+		pramFunction();
+		console.log("end of test closure");
+	}
+
+	testClosure(function () {
+		console.log("hello!");
+	})
+</script>
+</body>
+</html>
