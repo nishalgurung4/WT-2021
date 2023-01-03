@@ -28,6 +28,8 @@
    ![nav](assets/images/nav.png)
 > Deadline: 16th December, 10 am
 
+5. Develop a simple calculator
+> Deadline: 4th Jan, 6 am
 
 ## Labs:
 

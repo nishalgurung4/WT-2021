@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+<button id="btn-1">button1</button>
+<button id="btn-2">button2</button>
+<button id="btn-3">button3</button>
+
+<script type="text/javascript">
+
+	function display()
+	{
+		alert("Hello!");
+	}
+	
+	document.getElementById("btn-1").addEventListener("click", display);
+
+
+	document.getElementById("btn-2").addEventListener("click", function () {
+		alert("2nd hello");
+
+	});
+
+	Array.from(document.getElementsByTagName("button")).forEach(function (btn) {
+		btn.addEventListener("mouseover", function () {
+			alert("hovering! " + btn.textContent);
+		})
+	});
+</script>
+</body>
+</html>

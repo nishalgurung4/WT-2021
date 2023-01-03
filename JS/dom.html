@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM</title>
+</head>
+<body>
+<div>
+	<p>
+		This is p tag
+	</p>
+
+	<p id="p" onmouseover="changeEveryting()">
+		This is p tag with id p
+	</p>
+</div>
+
+<div>
+	<div class="div">Class div</div>
+	<div class="div">Another div</div>
+
+	<!-- dom0 -->
+	<input type="text" id="search" onkeyup="display()" />
+
+	<p id="output"></p>
+
+	<button onclick="changeEveryting()">Change Everything</button>
+</div>
+<script type="text/javascript">
+
+	function display()
+	{
+		let val = document.getElementById("search").value;
+		document.getElementById("output").textContent = val;
+	}
+
+	function changeEveryting()
+	{
+		//Manipulating html element
+		//1. Select the element 
+		let pEl = document.getElementById("p");
+
+		let divEl = document.getElementsByClassName("div");
+
+
+		let divTags = document.getElementsByTagName("div");
+
+
+		let search = document.getElementById("search");
+
+		//2. Manipulate
+		// CSS Manipulate
+		pEl.style.backgroundColor = "red";
+
+		divEl[0].style.fontSize = "30px";
+		
+		// content manipulate
+		pEl.innerHTML = "<b> This is content </b>";
+
+		pEl.textContent = "<b> This is content </b>";
+
+		search.value = "Type anything";
+	}
+
+</script>
+</body>
+</html>
