@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visibility</title>
+
+	<style type="text/css">
+		
+		div {
+			width: 200px;
+			height: 200px;
+			margin: 5px;
+		}
+
+		.box1 {
+			background-color: red;
+		}
+
+		.box2 {
+			background-color: blue;
+		}
+
+		.box3 {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+<div class="box1"></div>
+
+<div class="box2"></div>
+
+<div class="box3"></div>
+
+<script type="text/javascript">
+
+	Array.from(document.getElementsByTagName("div")).forEach(function (el){
+			el.addEventListener("click", function (event) {
+				event.target.style.display = "none";
+				console.log(event.target);
+			})
+	})
+</script>
+</body>
+</html>

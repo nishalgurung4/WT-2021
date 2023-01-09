@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form event handling</title>
+</head>
+<body>
+<form action="process.html" method="POST" id="search-form">
+	<input type="text" name="search" id="search" placeholder="Search text" />
+	<input type="submit" value="OK"> 
+</form>
+
+<script type="text/javascript">
+	document.getElementById("search-form").addEventListener("submit", function (event) {
+		event.preventDefault();
+		if (document.getElementById("search").value == "") {
+			alert("Empty input");
+		} else {
+			event.currentTarget.submit();
+		}
+	})
+	
+</script>
+</body>
+</html>

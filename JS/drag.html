@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drag and drop</title>
+	<style>
+		span {
+			background-color: grey;
+			padding: 8px;
+		}
+	</style>
+</head>
+<body>
+<span style="position:absolute;top:100px;left:100px;">Ringer</span>
+<span style="position: absolute; top:100px; left:170px">Ringer</span>
+<span style="position:absolute;top:100px; left:240px;">Roses</span>
+
+<script type="text/javascript">
+	let element;
+	const spanElements = document.querySelectorAll("span");
+
+	for(el of spanElements) {
+		el.addEventListener("mousedown", grab, true)
+	}
+
+	function grab(event)
+	{
+		element = event.currentTarget;
+		document.addEventListener("mousemove", mover, true);
+		document.addEventListener("mouseup", droper, true);
+
+	}
+
+	function mover(event)
+	{
+		element.style.left = event.clientX + "px";
+		element.style.top = event.clientY + "px";
+	}
+
+	function droper(event)
+	{
+		document.removeEventListener("mousemove", mover, true);
+
+		document.removeEventListener("mouseup", droper, true);
+	}
+</script>
+</body>
+</html>

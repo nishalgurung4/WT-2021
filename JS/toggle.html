@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toggle</title>
+</head>
+<body>
+<h1 id="name">Nishal Gurung</h1>
+<button id="toggle-btn">Toggle</button>
+
+<script type="text/javascript">
+	document.getElementById("toggle-btn").addEventListener("click", function () {
+		let nameEl = document.getElementById("name");
+		currentDisplay = nameEl.style.display;
+		if (currentDisplay == "none") {
+			nameEl.style.display = "block";
+		} else {
+			nameEl.style.display = "none";
+		}
+	})
+
+</script>
+</body>
+</html>
