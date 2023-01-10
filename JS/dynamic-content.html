@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dynamic Content</title>
+</head>
+<body>
+<input type="text" placeholder="Add content here.." id="content" />
+<br />
+<button id="add-btn">Add</button>
+
+<h1>Content here:</h1>
+<p id="display"></p>
+
+<script type="text/javascript">
+	document.getElementById("add-btn").addEventListener("click", function () {
+		document.getElementById("display").textContent = document.getElementById("content").value;
+	});
+
+</script>
+</body>
+</html>

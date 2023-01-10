@@ -31,6 +31,10 @@
 5. Develop a simple calculator
 > Deadline: 4th Jan, 6 am
 
+6. Explain event bubbling and capture with an example
+
+> Deadline: 11th Jan, 8 am
+
 ## Labs:
 
 1. Lab 1: HTML Elements.
@@ -56,6 +60,7 @@
 > Note: assets are inside `assets/images/lab2` folder
 
 > Deadline: 30th December, 8 am
+
 
 3. Lab 3: Javascript Fundamentals
 * WAP to reverse the string provided by the user.
