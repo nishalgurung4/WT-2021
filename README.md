@@ -70,3 +70,10 @@
 * Write a function that sorts the provided array based on the parameter (i.e. asc = ascending, desc = descending order).
 
 > Deadline: 13th Jan, 8 am
+
+4. Lab 4: Event handling in Javascript
+* Write a program to demonstrate page load event.
+* Write JS code to illustrate element positioning, stacking elements and mouse cursor.
+
+
+> Deadline: 20th Jan, 8 am
